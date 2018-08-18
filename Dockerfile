@@ -10,4 +10,4 @@ RUN mkdir -p /downloads
 RUN chown -R mediamanage:mediamanage /downloads
 
 USER mediamanage
-CMD transmission-daemon --foreground --config-dir /transmission-config --download-dir /downloads
+CMD transmission-daemon --foreground --allowed *.*.*.* --config-dir /transmission-config --download-dir /downloads
